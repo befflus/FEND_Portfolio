@@ -1,0 +1,181 @@
+/************************************************
+ *	Style Sheet for Udacity's portfolio Project *
+ *												*	 
+ *	Author: Steffan Hatlestad					*
+ *	Email: hattlis80@gmail.com					*
+ *	Website: https://github.com/befflus			*
+ ************************************************/
+
+
+
+
+/***************
+ * UI Elements *
+ ***************/
+
+* {
+ 	box-sizing: border-box;
+ }
+
+body {
+	background-color: #3d5d78;
+	margin: 0;
+	}
+
+h1 {
+	font-size: 1.5em;
+	color: #002051;
+	}
+
+h3 {
+	color: #e20047;
+	}
+
+h2 {
+	text-align: center;
+	background-color: #b0bec5;
+
+	}
+
+
+/***************
+ * Classes *
+ ***************/
+
+
+/* Centered wrapper, all other content divs will go inside this and will never exceed the width of 960px*/
+
+.wrapper {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: 'Orbitron', sans-serif;
+	}
+
+/* Setting for images on the page*/
+
+.image {
+	width: 100%;
+	height: auto%;
+	}
+
+/* Container for the header*/
+
+.flex-container {
+	background-color: #b0bec5;
+	display: flex;
+	border-bottom: #31414D solid medium;
+	margin-bottom: 20px;
+	}
+
+/* The udacity logo*/
+
+.logo {
+	width: 50%;
+	height: 50%;
+	min-width: 50px;
+	max-width: 30%;
+	padding: 2% 2%;
+	}
+
+/* Title */
+
+.title {
+	padding-right: 20px;
+	padding-left: 25px;
+	margin: auto;
+	}
+
+/* Container for featured work*/
+
+.flex-container_two {
+	display: flex;
+	}
+
+/* Featured work section*/
+
+.work1 {
+	flex: 1 auto;
+	width: 100%;	
+	order: 3;
+	padding: 10px;
+	}
+
+.work2 {
+	flex: 1 auto;
+	width: 100%;	
+	order: 2;
+	padding: 10px;
+	}
+
+.work3 {
+	flex: 1 auto;
+	width: 100%;
+	order: 1;
+	padding: 10px;
+	}
+
+/* Footer section */
+
+.footer-box {
+	display: flex;
+	background-color: #5d697e;
+	justify-content: space-around;
+	}
+
+/* Settings for social links with min size for touch screens*/
+
+.facebook, 
+.google-plus,
+.github,
+.codepen,
+.linkedin {
+	width: 3%;
+	min-width: 48px;
+	}
+
+
+
+/**************************************
+ * Smaller media. Site layout changes *
+ **************************************/
+
+
+@media screen and (max-width: 500px) {
+	.flex-container {
+		flex-wrap: wrap;
+		}
+
+	.logo {
+		height: 50px;
+		width: 50px;
+	}
+
+	.flex-container_two {
+	flex-wrap: wrap;
+
+	}
+
+	h1, h3 {
+		font-size: 0.9em;
+		}
+
+	.work1 {
+		width: 80%;
+		order: 2;
+		padding: 5px;
+		}
+
+	.work2 {
+		width: 80%;
+		order: 3;
+		padding: 5px;
+	}
+
+	.work3 {
+		width: 80%;
+		order: 1;
+		padding: 5px;
+	}
+}	
