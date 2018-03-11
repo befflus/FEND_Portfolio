@@ -11,4 +11,4 @@ I was also allowed to personalize this project.
 
 
 
-Link to the website [(https://befflus.github.io/FEND_Portfolio/)]
+[Link to the website](https://befflus.github.io/FEND_Portfolio/)
